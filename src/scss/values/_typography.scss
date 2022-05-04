@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital@1&display=swap");
+
+//color
+$main: #f4db7d;
+$secondary: #ff6a3d;
+$third: #1a2238;
+$black: #04030f;
+$white: #fffbff;
+
+//font
+$font-family: "Raleway";
+$fontBody: "Roboto Serif", serif;
+
+@for $index from 1 through 6 {
+  h#{$index} {
+    font-family: $font-family;
+  }
+}
+
+input,
+select,
+textarea {
+  font-family: $fontBody;
+  color: $white;
+}
+
+:export {
+  main: $main;
+  secondary: $secondary;
+  third: $third;
+  black: $black;
+  white: $white;
+  font-family: $font-family;
+}
+
+body {
+  font-family: $fontBody;
+  color: $black;
+  line-height: 1.6;
+}
+
+p {
+  font-family: $fontBody;
+  color: $black;
+  font-size: 1em;
+}
