@@ -1,3 +1,29 @@
-h1 {
-  margin-top: 1em;
+@use "../values" as *;
+
+.nav {
+  background-color: $third;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .hamburger-react {
+      display: none;
+    }
+    .nav-links {
+      .link {
+        margin: 2em;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline 2px $main;
+          text-underline-offset: 0.5em;
+          transition: 300ms ease;
+        }
+        &:focus {
+          text-decoration: underline 2px $main;
+          text-underline-offset: 0.5em;
+          transition: 300ms ease;
+        }
+      }
+    }
+  }
 }

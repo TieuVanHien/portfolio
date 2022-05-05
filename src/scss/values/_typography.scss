@@ -15,10 +15,18 @@ $fontBody: "Roboto Serif", serif;
 @for $index from 1 through 6 {
   h#{$index} {
     font-family: $font-family;
+    color: $white;
   }
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 input,
+a,
 select,
 textarea {
   font-family: $fontBody;
