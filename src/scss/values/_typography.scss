@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital@1&display=swap");
 
 //color
@@ -9,13 +9,15 @@ $black: #04030f;
 $white: #fffbff;
 
 //font
-$font-family: "Raleway";
+$font-family: "Bebas Neue", cursive;
 $fontBody: "Roboto Serif", serif;
 
 @for $index from 1 through 6 {
   h#{$index} {
     font-family: $font-family;
     color: $white;
+    font-size: 2em;
+    line-height: 1.4;
   }
 }
 
