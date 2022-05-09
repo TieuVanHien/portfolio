@@ -15,7 +15,7 @@ function App() {
           position: "fixed",
           zIndex: -1,
           width: "100%",
-          height: "auto",
+          height: "100%",
         }}
       />
       <Nav />
