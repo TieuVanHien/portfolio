@@ -23,8 +23,12 @@ $fontBody: "Roboto Serif", serif;
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  .particles-bg-canvas-self {
+    background-color: $black;
+  }
 }
 
 input,
@@ -46,12 +50,14 @@ textarea {
 
 body {
   font-family: $fontBody;
-  color: $black;
+  color: $white;
   line-height: 1.6;
 }
 
 p {
   font-family: $fontBody;
-  color: $black;
+  width: 60%;
+  text-align: center;
+  color: $white;
   font-size: 1em;
 }
