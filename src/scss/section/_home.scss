@@ -9,9 +9,20 @@
     justify-content: center;
     align-items: center;
     position: relative;
-
+    .narrow-btn {
+      margin-top: 3em;
+      width: 6em;
+      height: 6em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: $main;
+    }
     .headings {
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
       position: absolute;
       z-index: 1;
