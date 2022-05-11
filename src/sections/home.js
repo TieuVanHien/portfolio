@@ -1,6 +1,5 @@
 import TypingEffect from "typing-effect-react";
 import { narrow } from "../images";
-import { Wave } from "react-animated-text";
 
 export const Home = () => {
   return (
