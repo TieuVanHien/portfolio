@@ -1,9 +1,10 @@
 import TypingEffect from "typing-effect-react";
 import { narrow } from "../images";
+import { Wave } from "react-animated-text";
 
 export const Home = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div className="container">
         <div className="home headings">
           <h1>

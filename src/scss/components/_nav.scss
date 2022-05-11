@@ -19,6 +19,7 @@
     }
     .nav-links {
       .link {
+        color: $main;
         margin: 2em;
         cursor: pointer;
         &:hover {

@@ -4,13 +4,8 @@
   .container {
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     .narrow-btn {
-      margin-top: 3em;
+      margin-top: 2em;
       width: 6em;
       height: 6em;
       display: flex;
@@ -18,14 +13,23 @@
       align-items: center;
       border-radius: 50%;
       background-color: $main;
+      animation: move-up 3s ease-in-out infinite alternate-reverse;
+      @keyframes move-up {
+        to {
+          transform: translateY(3em);
+        }
+      }
     }
     .headings {
+      height: 50%;
+      width: 35%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      position: absolute;
-      z-index: 1;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 1em;
       h1 {
         font-size: 3em;
         margin: 0;

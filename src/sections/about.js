@@ -1,10 +1,7 @@
 export const About = () => {
   return (
-    <section className="about">
-      <div
-        className="container"
-        style={{ display: "flex", flexDirection: "column" }}
-      >
+    <section className="about" id="about">
+      <div className="container">
         <h1>About Me</h1>
         <p>
           {" "}
