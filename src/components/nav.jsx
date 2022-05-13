@@ -55,7 +55,20 @@ export const Nav = () => {
           >
             About
           </Link>
-
+          <Link
+            className="link"
+            to="skill"
+            spy={true}
+            smooth={true}
+            offset={5}
+            duration={1200}
+            onClick={() => {
+              setClose(false);
+              setOpen(false);
+            }}
+          >
+            Skills
+          </Link>
           <Link
             className="link"
             to="location"
