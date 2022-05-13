@@ -1,6 +1,10 @@
 .about {
+  height: 80vh;
   .container {
     width: 100%;
     flex-direction: column;
+    p {
+      font-size: 2em;
+    }
   }
 }
