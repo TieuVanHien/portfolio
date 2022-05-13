@@ -1,6 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import { Nav } from "./components";
-import { Home, About } from "./sections";
+import { Home, About, Skills } from "./sections";
 import ParticlesBg from "particles-bg";
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
         <Nav />
         <Home />
         <About />
+        <Skills />
       </Router>
     </div>
   );

@@ -1,0 +1,25 @@
+.skill {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    .list {
+      width: 60%;
+      .list-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .font-end {
+        width: 60%;
+      }
+    }
+    img {
+      width: 5em;
+      height: 5em;
+      margin-right: 0.5em;
+      border-radius: 0.5em;
+    }
+  }
+}
