@@ -9,13 +9,14 @@ $black: #04030f;
 $white: #fffbff;
 
 //font
-$font-family: "Bebas Neue", cursive;
+$fontFamily: "Bebas Neue", cursive;
 $fontBody: "Roboto Serif", serif;
 
 @for $index from 1 through 6 {
   h#{$index} {
-    font-family: $font-family;
+    font-family: $fontFamily;
     color: $white;
+    margin: 0;
   }
 }
 h1 {
@@ -36,6 +37,19 @@ body {
   .particles-bg-canvas-self {
     background-color: $black;
   }
+  .button {
+    height: 3em;
+    width: 9em;
+    font-family: $fontFamily;
+    color: $black;
+    font-size: 1em;
+    background-color: $main;
+    &:hover {
+      color: $white;
+      background-color: $secondary;
+      transition: 0.1s linear;
+    }
+  }
 }
 
 p {
@@ -44,6 +58,7 @@ p {
   text-align: center;
   color: $white;
   font-size: 1em;
+  line-height: 1.6;
 }
 
 input,
@@ -60,5 +75,5 @@ textarea {
   third: $third;
   black: $black;
   white: $white;
-  font-family: $font-family;
+  font-family: $fontFamily;
 }
