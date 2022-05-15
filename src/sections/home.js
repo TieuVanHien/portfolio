@@ -1,4 +1,5 @@
 import TypingEffect from "typing-effect-react";
+import { Button } from "@mui";
 import { narrow } from "../images";
 
 export const Home = () => {
@@ -16,9 +17,9 @@ export const Home = () => {
               data={["Front End Developer", "Webflow Developer"]}
             />
           </h1>
-          <div className="narrow-btn">
+          {/* <div className="narrow-btn">
             <img src={narrow} alt="narrow button" />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
