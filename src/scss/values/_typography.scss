@@ -45,9 +45,9 @@ body {
     font-size: 1em;
     background-color: $main;
     &:hover {
-      color: $white;
-      background-color: $secondary;
-      transition: 0.1s linear;
+      background-color: $main;
+      text-decoration: underline 2px $white;
+      text-underline-offset: 0.5em;
     }
   }
 }
