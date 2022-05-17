@@ -1,11 +1,17 @@
-.skill {
+.skills {
   padding-bottom: 2em;
+  height: 80vh;
   .container {
+    height: 80%;
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
+    h2 {
+      height: 20%;
+    }
     .list {
       width: 60%;
+      height: 80%;
       .list-container {
         width: 100%;
         display: flex;
