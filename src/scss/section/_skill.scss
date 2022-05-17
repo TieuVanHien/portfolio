@@ -1,8 +1,8 @@
 .skills {
   padding-bottom: 2em;
-  height: 80vh;
+  height: 70vh;
   .container {
-    height: 80%;
+    height: 100%;
     width: 100%;
     flex-direction: column;
     justify-content: flex-start;
@@ -10,16 +10,20 @@
       height: 20%;
     }
     .list {
-      width: 60%;
+      width: 65%;
       height: 80%;
       .list-container {
         width: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
       }
       .font-end {
         width: 60%;
+      }
+
+      .design {
+        margin-top: 3em;
       }
     }
     img {

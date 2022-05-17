@@ -43,7 +43,7 @@ export const Skills = () => {
           </div>
           <div className="skill design">
             <h3>Design</h3>
-            <div className="design image">
+            <div className="design-image">
               <img src={figma} alt="design figma" />
             </div>
           </div>
