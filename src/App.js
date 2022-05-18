@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <h2 id="logo">Van Hien Tieu</h2>
         <ParticlesBg
           width="100%"
           height="auto"

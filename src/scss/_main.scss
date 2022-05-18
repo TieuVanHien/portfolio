@@ -2,3 +2,12 @@
 @use "./container" as *;
 @use "./section" as *;
 @use "./values" as *;
+
+.App {
+  #logo {
+    position: fixed;
+    top: 0.5em;
+    left: 1em;
+    z-index: 10;
+  }
+}

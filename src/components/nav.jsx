@@ -9,7 +9,6 @@ export const Nav = () => {
   return (
     <section className="nav">
       <div className="container">
-        <h2>Van Hien Tieu</h2>
         <Hamburger
           size={25}
           color="white"
@@ -30,9 +29,9 @@ export const Nav = () => {
             to="home"
             className="link"
             smooth={true}
-            offset={-10}
+            offset={-5}
             spy={true}
-            duration={700}
+            duration={1200}
             onClick={() => {
               setClose(false);
               setOpen(false);
@@ -41,13 +40,12 @@ export const Nav = () => {
             Home
           </Link>
           <Link
-            d
             className="link"
             to="about"
             spy={true}
             smooth={true}
             offset={0}
-            duration={700}
+            duration={1200}
             onClick={() => {
               setClose(false);
               setOpen(false);
@@ -60,7 +58,7 @@ export const Nav = () => {
             to="skill"
             spy={true}
             smooth={true}
-            offset={5}
+            offset={0}
             duration={1200}
             onClick={() => {
               setClose(false);
@@ -74,7 +72,7 @@ export const Nav = () => {
             to="location"
             spy={true}
             smooth={true}
-            offset={5}
+            offset={0}
             duration={1200}
             onClick={() => {
               setClose(false);
