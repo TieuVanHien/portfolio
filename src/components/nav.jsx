@@ -29,7 +29,7 @@ export const Nav = () => {
             to="home"
             className="link"
             smooth={true}
-            offset={-5}
+            offset={0}
             spy={true}
             duration={1200}
             onClick={() => {
@@ -69,7 +69,7 @@ export const Nav = () => {
           </Link>
           <Link
             className="link"
-            to="location"
+            to="contact"
             spy={true}
             smooth={true}
             offset={0}
