@@ -44,8 +44,6 @@ body {
     color: $black;
     font-size: 1em;
     background-color: $main;
-    box-shadow: $white 4px 4px 0;
-    transform: transform 400ms box-shadow 200ms ease;
     border: 1px solid white;
     &:hover {
       background-color: $main;
@@ -53,8 +51,9 @@ body {
       text-underline-offset: 0.5em;
     }
     &:active {
-      transform: translateY(4px) translateX(4px);
-      box-shadow: $white 0 0 0;
+      background-color: $main;
+      text-decoration: underline 2px $white;
+      text-underline-offset: 0.5em;
     }
   }
 }
