@@ -25,8 +25,8 @@ function App() {
         <Home />
         <About />
         <Skills />
-        <Contact />
         <Project />
+        <Contact />
       </Router>
     </div>
   );
