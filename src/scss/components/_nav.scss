@@ -28,12 +28,14 @@
           text-decoration: underline 2px $main;
           text-underline-offset: 0.5em;
           transition: 300ms ease;
+          behavior: smooth;
         }
         &.active {
           text-decoration: underline 2px $main;
           text-underline-offset: 0.5em;
           font-size: 1.2em;
           transition: 200ms ease;
+          behavior: smooth;
         }
       }
     }

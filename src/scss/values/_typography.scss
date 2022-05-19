@@ -49,11 +49,13 @@ body {
       background-color: $main;
       text-decoration: underline 2px $white;
       text-underline-offset: 0.5em;
+      transition: background-color 200ms ease text-decoration 200ms ease;
     }
     &:active {
       background-color: $main;
       text-decoration: underline 2px $white;
       text-underline-offset: 0.5em;
+      transition: background-color 200ms ease text-decoration 200ms ease;
     }
   }
 }
