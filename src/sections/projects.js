@@ -1,20 +1,74 @@
 import AwesomeSlider from "react-awesome-slider";
+import { Button } from "@mui/material";
 import "react-awesome-slider/dist/styles.css";
-import { Caravelle } from "../components";
-import { weather } from "../images";
+import "react-awesome-slider/dist/custom-animations/fall-animation.css";
+import { weather, portfolio, caravelle, coversy, eduvietlink } from "../images";
 
 export const Project = () => {
   return (
     <section className="project" id="project">
       <div className="container">
-        <AwesomeSlider>
-          <Caravelle />
-          <div>
-            <div className="project-container">
-              <img src={weather} alt="weather api" />
-              <div className="detail">
-                <h3>React</h3> <span>|</span> <h3>Google API</h3>
+        <AwesomeSlider animation="fallAnimation">
+          <div className=" projects weather">
+            <img src={weather} alt="weather api" />
+            <div className="detail">
+              <div className="text">
+                <h4>React</h4> <span>|</span> <h4>Google API</h4>
               </div>
+              <Button className="button" variant="contained">
+                Live Demo
+              </Button>
+            </div>
+          </div>
+          <div className=" projects portfolio">
+            <img src={portfolio} alt="portfolio" />
+            <div className="detail">
+              <div className="text">
+                <h4>Webflow</h4>
+              </div>
+              <Button className="button" variant="contained">
+                Live Demo
+              </Button>
+            </div>
+          </div>
+          <div className=" projects coversy">
+            <img src={coversy} alt="coversy" />
+            <div className="detail">
+              <div className="text">
+                <h4>React</h4> <span>|</span> <h4>NodeJS</h4>
+                <span>|</span> <h4>AWS S3</h4>
+                <span>|</span> <h4>Redux</h4>
+                <span>|</span> <h4>SASS</h4>
+                <span>|</span> <h4>Express</h4>
+                <span>|</span> <h4>MongoDB</h4>
+              </div>
+              <Button className="button" variant="contained">
+                Live Demo
+              </Button>
+            </div>
+          </div>
+          <div className=" projects caravelle">
+            <img src={caravelle} alt="caravelle" />
+            <div className="detail">
+              <div className="text">
+                <h4>React</h4>
+                <span>|</span> <h4>SASS</h4>
+                <span>|</span> <h4>NodeJS</h4>
+              </div>
+              <Button className="button" variant="contained">
+                Live Demo
+              </Button>
+            </div>
+          </div>
+          <div className=" projects eduvietlink">
+            <img src={eduvietlink} alt="eduvietlink" />
+            <div className="detail">
+              <div className="text">
+                <h4>Webflow</h4>
+              </div>
+              <Button className="button" variant="contained">
+                Live Demo
+              </Button>
             </div>
           </div>
         </AwesomeSlider>
