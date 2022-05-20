@@ -28,10 +28,11 @@ export const Nav = () => {
           <Link
             to="home"
             className="link"
+            href="#home"
             smooth={true}
             offset={0}
             spy={true}
-            duration={1200}
+            duration={1000}
             onClick={() => {
               setClose(false);
               setOpen(false);
@@ -42,10 +43,11 @@ export const Nav = () => {
           <Link
             className="link"
             to="about"
+            href="#about"
             spy={true}
             smooth={true}
             offset={0}
-            duration={1200}
+            duration={1000}
             onClick={() => {
               setClose(false);
               setOpen(false);
@@ -56,10 +58,11 @@ export const Nav = () => {
           <Link
             className="link"
             to="skill"
+            href="#skill"
             spy={true}
             smooth={true}
             offset={0}
-            duration={1200}
+            duration={1000}
             onClick={() => {
               setClose(false);
               setOpen(false);
@@ -69,11 +72,27 @@ export const Nav = () => {
           </Link>
           <Link
             className="link"
-            to="contact"
+            to="project"
+            href="#project"
             spy={true}
             smooth={true}
             offset={0}
-            duration={1200}
+            duration={1000}
+            onClick={() => {
+              setClose(false);
+              setOpen(false);
+            }}
+          >
+            Projects
+          </Link>
+          <Link
+            className="link"
+            to="contact"
+            href="#contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
             onClick={() => {
               setClose(false);
               setOpen(false);
