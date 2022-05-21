@@ -53,7 +53,8 @@ export const Project = () => {
               <div className="text">
                 <h4>React</h4>
                 <span>|</span> <h4>SASS</h4>
-                <span>|</span> <h4>NodeJS</h4>
+                <span>|</span> <h4>Express</h4>
+                <span>|</span> <h4>NodeMailer</h4>
               </div>
               <Button className="button" variant="contained">
                 Live Demo
@@ -65,6 +66,9 @@ export const Project = () => {
             <div className="detail">
               <div className="text">
                 <h4>Webflow</h4>
+                <span>|</span> <h4>MemberStack</h4>
+                <span>|</span> <h4>Zapier</h4>
+                <span>|</span> <h4>Airtable</h4>
               </div>
               <Button className="button" variant="contained">
                 Live Demo
