@@ -1,4 +1,5 @@
 @use "../values" as *;
+@use "../mixin" as *;
 
 .nav {
   .container {
@@ -22,7 +23,6 @@
       justify-content: flex-start;
       align-items: center;
       flex-direction: column;
-
       .link {
         color: $main;
         margin: 2em;
@@ -31,15 +31,60 @@
         &:hover {
           text-decoration: underline 2px $main;
           text-underline-offset: 0.5em;
-          transition: 300ms ease;
-          behavior: smooth;
+          transition: text-decoration 300ms ease;
         }
         &.active {
           text-decoration: underline 2px $main;
           text-underline-offset: 0.5em;
           font-size: 1.2em;
-          transition: 200ms ease;
-          behavior: smooth;
+          transition: text-decoration 200ms ease;
+        }
+      }
+    }
+  }
+  @include respond-to("tablet") {
+    display: flex;
+    justify-content: space-between;
+    .container {
+      width: 10%;
+      height: auto;
+      align-items: flex-start;
+      background-color: transparent;
+      justify-content: flex-start;
+      .hamburger-react {
+        display: flex;
+        margin-top: 1em;
+      }
+      .nav-links {
+        height: 20em;
+        width: 15em;
+        position: fixed;
+        justify-content: center;
+        top: 10%;
+        border-radius: 0.5em;
+        background-color: $third;
+        right: 5%;
+        opacity: 1;
+        transform: translateX(0em);
+        transition: opacity 400ms ease, transform 400ms ease-out;
+        .link {
+          height: 2.5em;
+          margin: 0em;
+          transform: none;
+          color: $main;
+          &.active {
+            background-color: transparent;
+            text-decoration: underline 2px $white;
+            text-underline-offset: 0.5em;
+            transition: text-decoration 200ms ease;
+          }
+        }
+        &.closed {
+          .hamburger {
+            transform: none;
+          }
+          transform: translateX(18em);
+          opacity: 0;
         }
       }
     }

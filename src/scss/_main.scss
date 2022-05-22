@@ -2,6 +2,7 @@
 @use "./container" as *;
 @use "./section" as *;
 @use "./values" as *;
+@use "./mixin" as *;
 
 .App {
   #logo {
@@ -9,5 +10,10 @@
     top: 0.5em;
     left: 1em;
     z-index: 10;
+  }
+  @include respond-to("tablet") {
+    #logo {
+      font-size: 2em;
+    }
   }
 }
