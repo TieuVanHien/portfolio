@@ -10,12 +10,11 @@ export const Contact = () => {
     e.preventDefault();
     if (name && email && message) {
       setValid(true);
-
-      setEmail("");
-      setName("");
-      setMessage("");
     }
     setSubmitted(true);
+    setEmail("");
+    setName("");
+    setMessage("");
   };
   const [valid, setValid] = useState(false);
   return (
