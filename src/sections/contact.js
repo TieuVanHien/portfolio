@@ -1,13 +1,37 @@
-import { TextField, Button } from "@mui/material";
+import { useState } from "react";
+import { TextField } from "@mui/material";
 
 export const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name && email && message) {
+      setValid(true);
+
+      setEmail("");
+      setName("");
+      setMessage("");
+    }
+    setSubmitted(true);
+  };
+  const [valid, setValid] = useState(false);
   return (
     <section className="contact" id="contact">
       <div className="container">
         <h2>Please fill out the form below to contact me</h2>
+        {submitted && valid ? (
+          <h2 id="success">
+            Thank you for submit the form! I'll be contacting you in a while
+          </h2>
+        ) : null}
         <div className="form-container">
-          <form className="form">
+          <form className="form" onSubmit={handleSubmit}>
             <TextField
+              onChange={(e) => setName(e.target.value)}
+              value={name}
               id="outlined-textarea"
               label="Name"
               placeholder="Name"
@@ -22,7 +46,10 @@ export const Contact = () => {
                 },
               }}
             />
+            {submitted && !name ? <span>Please fill out your name</span> : null}
             <TextField
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
               id="outlined-textarea"
               label="Email"
               placeholder="Email"
@@ -36,7 +63,12 @@ export const Contact = () => {
                 },
               }}
             />
+            {submitted && !email ? (
+              <span>Please fill out your email</span>
+            ) : null}
             <TextField
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
               id="outlined-textarea"
               label="Message"
               placeholder="Message"
@@ -51,9 +83,17 @@ export const Contact = () => {
                 },
               }}
             />
-            <Button className="button" variant="contained">
+            {submitted && !message ? (
+              <span>Please fill out your message</span>
+            ) : null}
+            <button
+              className="button"
+              type="submit"
+              value="submit"
+              variant="contained"
+            >
               Submit
-            </Button>
+            </button>
           </form>
         </div>
       </div>
