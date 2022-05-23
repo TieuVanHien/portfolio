@@ -30,12 +30,12 @@
         cursor: pointer;
         transform: rotate(90deg);
         &:hover {
-          text-decoration: underline 2px $main;
+          text-decoration: underline 2px $white;
           text-underline-offset: 0.5em;
           transition: text-decoration 300ms ease;
         }
         &.active {
-          text-decoration: underline 2px $main;
+          text-decoration: underline 2px $white;
           text-underline-offset: 0.5em;
           font-size: 1.2em;
           transition: text-decoration 200ms ease;

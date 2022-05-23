@@ -15,7 +15,12 @@ export const Project = () => {
               <div className="text">
                 <h4>React</h4> <span>|</span> <h4>Google API</h4>
               </div>
-              <Button className="button" variant="contained">
+              <Button
+                className="button"
+                variant="contained"
+                href="https://weather-app-tieuvanhien.vercel.app/"
+                target="_blank"
+              >
                 Live Demo
               </Button>
             </div>
@@ -26,7 +31,12 @@ export const Project = () => {
               <div className="text">
                 <h4>Webflow</h4>
               </div>
-              <Button className="button" variant="contained">
+              <Button
+                className="button"
+                variant="contained"
+                href="https://van-hien-tieu-portfolio.webflow.io/"
+                target="_blank"
+              >
                 Live Demo
               </Button>
             </div>
@@ -42,7 +52,12 @@ export const Project = () => {
                 <span>|</span> <h4>Express</h4>
                 <span>|</span> <h4>MongoDB</h4>
               </div>
-              <Button className="button" variant="contained">
+              <Button
+                className="button"
+                href="https://coversy.vercel.app/"
+                target="_blank"
+                variant="contained"
+              >
                 Live Demo
               </Button>
             </div>
@@ -56,7 +71,12 @@ export const Project = () => {
                 <span>|</span> <h4>Express</h4>
                 <span>|</span> <h4>NodeMailer</h4>
               </div>
-              <Button className="button" variant="contained">
+              <Button
+                className="button"
+                variant="contained"
+                href="https://caravelle.vercel.app/"
+                target="_blank"
+              >
                 Live Demo
               </Button>
             </div>
@@ -70,7 +90,12 @@ export const Project = () => {
                 <span>|</span> <h4>Zapier</h4>
                 <span>|</span> <h4>Airtable</h4>
               </div>
-              <Button className="button" variant="contained">
+              <Button
+                className="button"
+                href="https://eduvietlink.webflow.io/"
+                target="_blank"
+                variant="contained"
+              >
                 Live Demo
               </Button>
             </div>
