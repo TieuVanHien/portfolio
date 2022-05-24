@@ -13,6 +13,9 @@ export const Contact = () => {
     if (name && email && message) {
       setValid(true);
       setSubmitted(true);
+      setName("");
+      setEmail("");
+      setMessage("");
       e.target.reset();
     }
     setSubmitted(true);
