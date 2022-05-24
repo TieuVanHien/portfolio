@@ -1,10 +1,21 @@
+@use "../mixin" as *;
+
 .about {
   height: 100vh;
   .container {
     flex-direction: column;
     p {
       font-size: 2em;
-      width: 70%;
+    }
+  }
+  @include respond-to("tablet") {
+    .container {
+      h1 {
+        font-size: 1.7em;
+      }
+      p {
+        font-size: 1.2em;
+      }
     }
   }
 }

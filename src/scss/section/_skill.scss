@@ -1,3 +1,5 @@
+@use "../mixin" as *;
+
 .skills {
   height: 100vh;
   .container {
@@ -28,6 +30,16 @@
       height: 5em;
       margin-right: 0.5em;
       border-radius: 0.5em;
+    }
+  }
+  @include respond-to("tablet") {
+    height: auto;
+    .container {
+      h2 {
+        margin-bottom: 1.5em;
+        width: 70%;
+        font-size: 1.7em;
+      }
     }
   }
 }
