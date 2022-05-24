@@ -21,11 +21,11 @@ export const Contact = () => {
   return (
     <section className="contact" id="contact">
       <div className="container">
-        <h2>Please fill out the form below to contact me</h2>
+        <h1>Please fill out the form below to contact me</h1>
         {submitted && valid ? (
-          <h2 id="success">
+          <h1 id="success">
             Thank you for submit the form! I'll be contacting you in a while
-          </h2>
+          </h1>
         ) : null}
         <div className="form-container">
           <form className="form" onSubmit={handleSubmit}>

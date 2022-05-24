@@ -6,13 +6,17 @@
 
 .App {
   #logo {
+    background-color: $black;
+    padding: 0.1em 0.5em 0.1em 0.5em;
     position: fixed;
     top: 0.7em;
     left: 1em;
     z-index: 10;
+    border-radius: 0.2em;
   }
   @include respond-to("tablet") {
     #logo {
+      top: 0.3em;
       font-size: 2em;
     }
   }

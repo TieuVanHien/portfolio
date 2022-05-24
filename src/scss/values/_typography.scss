@@ -17,6 +17,8 @@ $fontBody: "Roboto Serif", serif;
     font-family: $fontFamily;
     color: $white;
     margin: 0;
+    line-height: 1.6;
+    text-align: center;
   }
 }
 h1 {
@@ -52,13 +54,13 @@ body {
     &:hover {
       background-color: $main;
       text-decoration: underline 2px $white;
-      text-underline-offset: 0.5em;
+      text-underline-offset: 0.2em;
       transition: background-color 200ms ease text-decoration 200ms ease;
     }
     &:active {
       background-color: $main;
       text-decoration: underline 2px $white;
-      text-underline-offset: 0.5em;
+      text-underline-offset: 0.2em;
       transition: background-color 200ms ease text-decoration 200ms ease;
     }
   }

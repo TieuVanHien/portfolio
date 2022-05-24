@@ -15,7 +15,7 @@ export const Skills = () => {
   return (
     <section className="skills " id="skill">
       <div className="container">
-        <h2>Here Are Some Of My Skills And Tools That I'm Working With</h2>
+        <h1>Here Are Some Of My Skills And Tools That I'm Working With</h1>
         <div className="skill list">
           <div className="list-container">
             <div className="skill front-end">

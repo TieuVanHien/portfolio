@@ -5,7 +5,7 @@
   .container {
     height: 100%;
     flex-direction: column;
-    h2 {
+    h1 {
       height: 20%;
     }
     .list {
@@ -35,10 +35,13 @@
   @include respond-to("tablet") {
     height: auto;
     .container {
-      h2 {
+      h1 {
         margin-bottom: 1.5em;
         width: 70%;
         font-size: 1.7em;
+      }
+      h3 {
+        font-size: 1.4em;
       }
     }
   }

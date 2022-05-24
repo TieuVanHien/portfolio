@@ -1,9 +1,10 @@
-@use "../components" as *;
+@use "../mixin" as *;
 @use "../values" as *;
 
 .project {
   .container {
-    height: 100vh;
+    height: auto;
+    flex-direction: column;
     span {
       color: $main;
       font-size: 2em;
@@ -35,6 +36,39 @@
           }
         }
       }
+    }
+  }
+  @include respond-to("tablet") {
+    height: 100vh;
+    .container {
+      h1 {
+        margin-bottom: 1.5em;
+        font-size: 1.7em;
+      }
+      .awssld__bullets {
+        display: none;
+      }
+      .awssld__content {
+        .projects {
+          img {
+            width: 85%;
+            height: 75%;
+          }
+          .detail {
+            width: 85%;
+            flex-direction: column;
+            .text {
+              width: 100%;
+              h4 {
+                font-size: 1.2em;
+              }
+            }
+          }
+        }
+      }
+    }
+    .button {
+      margin-top: 1.5em;
     }
   }
 }
