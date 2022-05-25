@@ -24,6 +24,7 @@ export const Contact = () => {
     if (name && email && message) {
       setDisabled(false);
       setSubmitted(true);
+      setErrorText("");
       setName("");
       setEmail("");
       setMessage("");
