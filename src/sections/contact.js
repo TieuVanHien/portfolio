@@ -9,7 +9,7 @@ export const Contact = () => {
   const [message, setMessage] = useState();
   const [disabled, setDisabled] = useState(true);
   const [submitted, setSubmitted] = useState(false);
-  const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
   const [errorText, setErrorText] = React.useState();
   const onEmailChange = (event) => {
     if (event.target.value.match(emailRegex)) {
