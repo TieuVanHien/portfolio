@@ -92,7 +92,7 @@ export const Contact = () => {
                 },
               }}
             />
-            {errorText}
+            <span>{errorText}</span>
             <TextField
               onChange={(e) => setMessage(e.target.value)}
               value={message}
