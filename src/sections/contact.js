@@ -1,24 +1,33 @@
 import React, { useState, useRef } from "react";
-import { TextField } from "@mui/material";
+import { TextField, Button } from "@mui/material";
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const form = useRef();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+  const [disabled, setDisabled] = useState(true);
   const [submitted, setSubmitted] = useState(false);
+  const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  const [errorText, setErrorText] = React.useState();
+  const onEmailChange = (event) => {
+    if (event.target.value.match(emailRegex)) {
+      setErrorText("");
+      setEmail(event.target.value);
+    } else {
+      setErrorText("Invalid Format");
+    }
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name && email && message) {
-      setValid(true);
+      setDisabled(false);
       setSubmitted(true);
       setName("");
       setEmail("");
       setMessage("");
-      e.target.reset();
     }
-    setSubmitted(true);
     emailjs
       .sendForm(
         "service_ocxu1ns",
@@ -36,12 +45,12 @@ export const Contact = () => {
       );
     e.target.reset();
   };
-  const [valid, setValid] = useState(false);
+
   return (
     <section className="contact" id="contact">
       <div className="container">
         <h1>Please fill out the form below to contact me</h1>
-        {submitted && valid ? (
+        {submitted ? (
           <h1 id="success">
             Thank you for submit the form! I'll be contacting you in a while
           </h1>
@@ -66,9 +75,8 @@ export const Contact = () => {
                 },
               }}
             />
-            {submitted && !name ? <span>Please fill out your name</span> : null}
             <TextField
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={onEmailChange}
               value={email}
               id="outlined-textarea"
               label="Email"
@@ -84,9 +92,7 @@ export const Contact = () => {
                 },
               }}
             />
-            {submitted && !email ? (
-              <span>Please fill out your email</span>
-            ) : null}
+            {errorText}
             <TextField
               onChange={(e) => setMessage(e.target.value)}
               value={message}
@@ -105,17 +111,26 @@ export const Contact = () => {
                 },
               }}
             />
-            {submitted && !message ? (
-              <span>Please fill out your message</span>
-            ) : null}
-            <button
-              className="button"
-              type="submit"
-              value="submit"
-              variant="contained"
-            >
-              Submit
-            </button>
+            {email && name && message ? (
+              <Button
+                className="button"
+                type="submit"
+                value="submit"
+                variant="contained"
+              >
+                Submit
+              </Button>
+            ) : (
+              <Button
+                className="button"
+                type="submit"
+                value="submit"
+                variant="contained"
+                disabled={disabled}
+              >
+                Submit
+              </Button>
+            )}
           </form>
         </div>
       </div>
