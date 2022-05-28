@@ -15,7 +15,7 @@ export const Project = () => {
             <div className="detail">
               <div className="text">
                 <h4>React</h4> <span>|</span> <h4>NodeJS</h4>
-                <span>|</span> <h4>AWS S3</h4>
+                <span>|</span> <h4>AWS</h4>
                 <span>|</span> <h4>Redux</h4>
                 <span>|</span> <h4>SASS</h4>
                 <span>|</span> <h4>Express</h4>

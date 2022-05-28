@@ -1,5 +1,6 @@
 import TypingEffect from "typing-effect-react";
 import { Button } from "@mui/material";
+import { Link } from "react-scroll";
 
 export const Home = () => {
   return (
@@ -16,9 +17,18 @@ export const Home = () => {
               data={["Front End Developer", "Webflow Developer"]}
             />
           </h1>
-          <Button className="button" variant="contained">
+
+          <Link
+            to="contact"
+            className="button"
+            href="#contact"
+            smooth={true}
+            offset={0}
+            spy={true}
+            duration={1000}
+          >
             Contact
-          </Button>
+          </Link>
         </div>
       </div>
     </section>
