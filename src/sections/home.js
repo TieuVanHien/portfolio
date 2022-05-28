@@ -1,5 +1,4 @@
 import TypingEffect from "typing-effect-react";
-import { Button } from "@mui/material";
 import { Link } from "react-scroll";
 
 export const Home = () => {
