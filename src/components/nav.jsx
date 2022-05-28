@@ -1,6 +1,9 @@
 import { Link } from "react-scroll";
 import React, { useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
+import { Button } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -100,6 +103,17 @@ export const Nav = () => {
           >
             Contact
           </Link>
+          <div className="social-links">
+            <Button target="_blank" href="https://github.com/TieuVanHien">
+              <GitHubIcon fontSize="large" sx={{ color: "#f4db7d" }} />
+            </Button>
+            <Button
+              target="_blank"
+              href="https://www.linkedin.com/in/van-hien-tieu-4532041b7/"
+            >
+              <LinkedInIcon fontSize="large" sx={{ color: "#f4db7d" }} />
+            </Button>
+          </div>
         </div>
       </div>
     </section>
