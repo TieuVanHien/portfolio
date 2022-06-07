@@ -1,5 +1,6 @@
 import TypingEffect from "typing-effect-react";
 import { Link } from "react-scroll";
+import { Workbench } from "../components/3d-model";
 
 export const Home = () => {
   return (
@@ -29,6 +30,7 @@ export const Home = () => {
             Contact
           </Link>
         </div>
+        <Workbench />
       </div>
     </section>
   );
