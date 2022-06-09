@@ -1,6 +1,5 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import { Nav } from "./components";
-import { Scene } from "./components/3d-model";
 import { Home, About, Skills, Contact, Project } from "./sections";
 import ParticlesBg from "particles-bg";
 
@@ -24,7 +23,6 @@ function App() {
         />
         <Nav />
         <Home />
-        <Scene />
         <About />
         <Skills />
         <Project />
