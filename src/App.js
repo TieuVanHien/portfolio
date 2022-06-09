@@ -13,7 +13,7 @@ function App() {
           height="auto"
           type="cobweb"
           color="#ffffff"
-          num={50}
+          num={20}
           bg={{
             position: "fixed",
             zIndex: -1,
